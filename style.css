@@ -264,6 +264,8 @@ body {
   background-image: url(assets/img/project01.png);
 }
 
+
+
 /* 놀이터 */
 #playGround {
   margin-top: 5vh;
@@ -278,8 +280,24 @@ body {
   word-break: keep-all;
 }
 
-#playGround .content__image {
+/* #playGround .content__image {
   background-image: url(assets/img/project01.png);
+} */
+
+#playGround .content__imgWrap .i1{
+  background-image: url(assets/img/JBBank/jeonbuk_bank.png);
+}
+#playGround .content__imgWrap .i2{
+  background-image: url(assets/img/NeNe/nene_chicken.png);
+}
+#playGround .content__imgWrap .i3{
+  background-image: url(assets/img/JSTodo/todo_list.png);
+}
+#playGround .content__imgWrap .i4{
+  background-image: url(assets/img/JSDrawer/draw.png);
+}
+#playGround .content__imgWrap .i5{
+  background-image: url(assets/img/SvelteBlog/svelte.png);
 }
 
 .footer {
