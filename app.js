@@ -49,6 +49,15 @@ textAnimation
       y: 50,
     },
     "+=1"
+  )
+  .from(
+    "#textAnimation .t5",
+    {
+      autoAlpha: 0,
+      duration: 1,
+      y: 50,
+    },
+    "+=1"
   );
 
 ScrollTrigger.create({
@@ -101,7 +110,7 @@ const animate = (item) => {
       x: 0,
       y: 0,
       delay: delay,
-      duration: 1.25,
+      duration: 1.5,
       overwrite: "auto",
       ease: "expo",
     }
@@ -117,5 +126,47 @@ function raf(time) {
 
 requestAnimationFrame(raf);
 
-// 프로젝트 텍스트 애니메이션
-//gsap.
+//프로젝트 이미지 애니메이션
+const imageAni = gsap.timeline();
+imageAni
+  .from("#playGround .i1", {
+    y: -100,
+    autoAlpha: 0,
+    borderRadius: 100,
+  })
+  .from("#playGround .i2", {
+    y: 100,
+    autoAlpha: 0,
+    borderRadius: 100,
+  })
+  .from("#playGround .i3", {
+    y: -100,
+    autoAlpha: 0,
+    borderRadius: 100,
+  })
+  .from("#playGround .i4", {
+    y: 100,
+    autoAlpha: 0,
+    borderRadius: 100,
+  })
+  .from("#playGround .i5", {
+    y: -100,
+    autoAlpha: 0,
+    borderRadius: 100,
+  })
+  .from("#playGround .i6", {
+    y: -100,
+    autoAlpha: 0,
+    borderRadius: 100,
+  });
+
+ScrollTrigger.create({
+  animation: imageAni,
+  trigger: "#playGround",
+  start: "top top",
+  end: "+=4000",
+  scrub: true,
+  pin: true,
+  anticipatePin: 1,
+  markers: false,
+});

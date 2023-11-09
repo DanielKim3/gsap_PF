@@ -20,12 +20,12 @@
             <!-- <img src="./assets/img/Logo.png" alt="Logo Image" /> -->
           </h1>
         </div>
-        <ul class="nav__menu">
+        <!-- <ul class="nav__menu">
           <li><a href="#textAnimation">Home</a></li>
           <li><a href="#section1">A</a></li>
           <li><a href="#section2">B</a></li>
           <li><a href="#section3">C</a></li>
-        </ul>
+        </ul> -->
       </nav>
     </header>
     <main id="parallaxcont">
@@ -36,29 +36,30 @@
       </a>
       <section id="textAnimation" class="parallax__item">
         <div class="parallax__item__text t1">상상속 세계를</div>
-        <div class="parallax__item__text t2">현실에서 만들고 싶은</div>
-        <div class="parallax__item__text t3">미래 지향 적인</div>
-        <div class="parallax__item__text t4">프론트엔드 개발자</div>
+        <div class="parallax__item__text t2">현실에서 만들고</div>
+        <div class="parallax__item__text t3">세상을 바꾸고자 하는</div>
+        <div class="parallax__item__text t4">열정 많은</div>
+        <div class="parallax__item__text t5">프론트엔드 개발자</div>
       </section>
       <section id="section1" class="parallax__item__picture__R">
-        <figure class="parallax__item__imgWrap reveal reveal_right">
-          <div class="parallax__item__img"></div>
+        <figure class="parallax__item__imgWrap reveal reveal_left">
+          <div class="parallax__item__img i1"></div>
         </figure>
         <p class="parallax__item__desc reveal">
           목표를 세우고, 그 목표를 향해 끊임없이 달려가요.
         </p>
       </section>
       <section id="section2" class="parallax__item__picture__L">
-        <figure class="parallax__item__imgWrap reveal reveal_left">
-          <div class="parallax__item__img"></div>
+        <figure class="parallax__item__imgWrap reveal reveal_right">
+          <div class="parallax__item__img i2"></div>
         </figure>
         <p class="parallax__item__desc reveal reveal_left" data-delay: 0.8>
           해야 할 업무를 리스트화 하고 끊임없이 체크해요.
         </p>
       </section>
       <section id="section3" class="parallax__item__picture__R">
-        <figure class="parallax__item__imgWrap reveal reveal_right">
-          <div class="parallax__item__img"></div>
+        <figure class="parallax__item__imgWrap reveal reveal_left">
+          <div class="parallax__item__img i3"></div>
         </figure>
         <p class="parallax__item__desc reveal" data-delay: 0.5>
           세상을 바꾸기 위해 끊임 없이 공부해요.
@@ -66,16 +67,57 @@
       </section>
       <section id="project">
         <p class="project__item__desc reveal reveal_top">프로젝트</p>
-        <figure class="project__item__imgWrap">
-          <div class="parallax__item__img"></div>
-        </figure>
+        <div class="content__imgWrap reveal reveal_L">
+          <div class="content__image"></div>
+        </div>
       </section>
-      <section id="play-ground"><p>놀이터</p></section>
+      <section id="playGround" class="content__item">
+        <p class="playGround__item__desc reveal reveal_L">놀이터</p>
+        <div class="content__imgWrap">
+          <div class="content__image i1"></div>
+          <div class="content__image i2"></div>
+          <div class="content__image i3"></div>
+          <div class="content__image i4"></div>
+          <div class="content__image i5"></div>
+          <div class="content__image i6"></div>
+        </div>
+      </section>
     </main>
+    <footer>
+      <div class="footer">
+        <div class="footer-contents">
+          <div class="layer-one">
+            <strong>CANDIDATES INFO</strong>
+            <br />
+            이름 : 김우진 &nbsp;&nbsp;&nbsp;&nbsp; 이메일 : wjinkim21@naver.com
+            <br />
+            취미 : 운동, 베이킹, 독서, 영화 감상, 음악 감상, 걷기
+            <br />
+            스킬 : HTML5, CSS3, Javascript, Svelte.js, Node.js, Three.js,
+            Tailwind CSS, GSAP
+            <br />
+            <br />
+            Copyright 2023. Kim,Woo-Jin. All Rights Reserved
+          </div>
+          <div class="layer-two">
+            <strong>ARCHIVE</strong>
+            <li>
+              <a href="https://github.com/DanielKim3" target="_blank"
+                ><i class="fab fa-brands fa-github"></i
+              ></a>
+            </li>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/63e451f189.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="./app.js"></script>
   </body>
 </html>
