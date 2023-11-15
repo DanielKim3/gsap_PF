@@ -290,10 +290,6 @@ button:hover {
   word-break: keep-all;
 }
 
-/* #playGround .content__image {
-  background-image: url(/assets/img/project01.png);
-} */
-
 #playGround .content__imgWrap .i1 {
   background-image: url(/assets/img/JBBank/jeonbuk_bank.png);
 }
