@@ -1,11 +1,11 @@
 // 진행바 효과
 gsap.from(".progressBar", {
+  value: 100,
   scrollTrigger: {
-    valeu: 100,
     trigger: "#textAnimation",
-    scrub: true,
+    scrub: 0.3,
     start: "top top",
-    //end: () => document.querySelector(".footer").offsetWidth,
+    end: () => document.querySelector(".footer").offsetWidth,
   },
   scaleX: 0,
   transformOrigin: "left center",

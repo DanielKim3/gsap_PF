@@ -10,25 +10,12 @@
       href="https://webfontworld.github.io/NexonLv1Gothic/NexonLv1Gothic.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./reset.css" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/reset.css" />    
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header>
       <span class="progressBar"></span>
-      <nav id="nav">
-        <div class="nav__logo">
-          <h1>
-            <!-- <img src="./assets/img/Logo.png" alt="Logo Image" /> -->
-          </h1>
-        </div>
-        <!-- <ul class="nav__menu">
-          <li><a href="#textAnimation">Home</a></li>
-          <li><a href="#section1">A</a></li>
-          <li><a href="#section2">B</a></li>
-          <li><a href="#section3">C</a></li>
-        </ul> -->
-      </nav>
     </header>
     <main id="parallaxcont">
       <a href="#" class="scroll__down">
@@ -70,17 +57,127 @@
       <section id="project">
         <p class="project__item__desc reveal reveal_top">프로젝트</p>
         <div class="content__imgWrap reveal reveal_L">
-          <div class="content__image"></div>
+          <div class="content__image">
+            <div class="card__content">
+              <p class="card__title">설명</p>
+              <p class="card__description">
+                대시보드 성격의 변전소 종합예방 진단 시스템 웹 서비스 기획 및
+                개발했습니다. 서버에서 받은 데이터를 차트, 테이블, 웹 화면으로
+                통해서 보여줍니다.
+              </p>
+              <p class="card__subtitle">사용기술</p>
+              <ul class="skill-list">
+                <li class="pill">HTML5</li>
+                <li class="pill">CSS3</li>
+                <li class="pill">Javascript</li>
+                <li class="pill">node.js</li>
+                <li class="pill">svelte.js</li>
+                <li class="pill">three.js</li>
+                <li class="pill">highchart.js</li>
+                <li class="pill">tailwind css</li>
+                <li class="pill">vite</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
       <section id="playGround" class="content__item">
         <p class="playGround__item__desc reveal reveal_L">놀이터</p>
         <div class="content__imgWrap">
-          <div class="content__image i1"></div>
-          <div class="content__image i2"></div>
-          <div class="content__image i3"></div>
-          <div class="content__image i4"></div>
-          <div class="content__image i5"></div>
+          <div class="content__image i1">
+            <div class="card__content">
+              <p class="card__title">설명</p>
+              <p class="card__description">
+                전북은행 사이트를 클론 코딩 하였습니다.
+                GNB에서 클릭하여 페이지 전환이 가능 합니다.
+              </p>
+              <p class="card__subtitle">사용기술</p>
+              <ul class="skill-list">
+                <li class="pill">HTML5</li>
+                <li class="pill">CSS3</li>
+                <li class="pill">jquery</li>
+              </ul>
+              <button class="card__button b2" onclick="window.open('https://danielkim3.github.io/Jeonbuk_Bank/main.html')">                
+                <strong>사이트 이동</strong>
+              </button>
+            </div>
+          </div>
+          <div class="content__image i2">
+            <div class="card__content">
+              <p class="card__title">설명</p>
+              <p class="card__description">
+                네네치킨 반응형 사이트를 만들었습니다. 이미지 슬라이드,
+                트랜지션이 구현되어 있습니다. PC, Tablet, Mobile 반응형 되도록
+                구현했습니다.
+              </p>
+              <p class="card__subtitle">사용기술</p>
+              <ul class="skill-list">
+                <li class="pill">HTML5</li>
+                <li class="pill">CSS3</li>
+                <li class="pill">jquery</li>
+              </ul>
+              <button type="button" class="card__button b3" onclick="window.open('https://danielkim3.github.io/nenechicken_responsive/NENEindex.html')">                
+                <strong>사이트 이동</strong>
+              </button>              
+            </div>
+          </div>
+          <div class="content__image i3">
+            <div class="card__content">
+              <p class="card__title">설명</p>
+              <p class="card__description">
+                바닐라 자바스크립트로 투두 리스트 사이트를 만들었습니다. 시계
+                그리고 날씨, 사진 API를 연결 하여 화면에 반영되도록 구현
+                했습니다.
+              </p>
+              <p class="card__subtitle">사용기술</p>
+              <ul class="skill-list">
+                <li class="pill">HTML5</li>
+                <li class="pill">CSS3</li>
+                <li class="pill">Javascript</li>
+              </ul>
+              <button type="button" class="card__button b4" onclick="window.open('https://danielkim3.github.io/javascript_Momentum/')">                
+                <strong>사이트 이동</strong>
+              </button>                            
+            </div>
+          </div>
+          <div class="content__image i4">
+            <div class="card__content">
+              <p class="card__title">설명</p>
+              <p class="card__description">
+                바닐라 자바스크립트로 그림판을 간단하게 만들었습니다. 지금
+                현재는 색상 변경, 펜 굵기 조절만 구현되어있습니다. 타 기능은
+                추가할 예정입니다.
+              </p>
+              <p class="card__subtitle">사용기술</p>
+              <ul class="skill-list">
+                <li class="pill">HTML5</li>
+                <li class="pill">CSS3</li>
+                <li class="pill">Javascript</li>
+              </ul>
+              <button type="button" class="card__button b5" onclick="window.open('https://danielkim3.github.io/JSPaint/')">                
+                <strong>사이트 이동</strong>
+              </button>                 
+            </div>
+          </div>
+          <div class="content__image i5">
+            <div class="content__image i5">
+              <div class="card__content">
+                <p class="card__title">설명</p>
+                <p class="card__description">
+                  중장기 프로젝트로 진행 할 예정 입니다.                  
+                  개발자, 디자이너, 기획자, 취준생을 위한 커뮤니티 사이트를 만들고 있습니다.
+                </p>
+                <p class="card__subtitle">사용기술</p>
+                <ul class="skill-list">
+                  <li class="pill">svelte_kit</li>
+                  <li class="pill">tailwind css</li>
+                  <li class="pill">daisy ui</li>
+                </ul>
+                <button type="button" class="card__button b6" onclick="window.open('https://github.com/DanielKim3/svelte_community')">                
+                  <strong>사이트 이동</strong>
+                </button>                
+              </div>
+          </div>
         </div>
       </section>
     </main>
@@ -125,7 +222,7 @@
                 ><i class="fab fa-brands fa-github"></i
               ></a>
             </li>
-            <strong>RESUME</strong>
+            <strong>Résumé</strong>
             <li>
               <a
                 href="https://drive.google.com/uc?export=download&id=1oOH8R0_jlNKerOaMA9MW-WSHMKini28O"
@@ -145,6 +242,6 @@
       src="https://kit.fontawesome.com/63e451f189.js"
       crossorigin="anonymous"
     ></script>
-    <script src="./gsap.js"></script>
+    <script src="./js/gsap.js"></script>
   </body>
 </html>

@@ -12,6 +12,18 @@ body {
   font-weight: 300;
   background-color: black;
 }
+button {
+  width: 120px;
+  height: 50px;
+  border: none;
+  border-radius: 9px;
+  color: black;
+  cursor: pointer;
+}
+button:hover {
+  transition: 1s;
+  color: white;
+}
 
 /* Nav */
 #nav {
@@ -184,14 +196,14 @@ body {
   transform: scale(1);
 }
 #section1 .parallax__item__img {
-  background-image: url(assets/img/3D_Darts.png);
+  background-image: url(/assets/img/3D_Darts.png);
 }
 #section2 .parallax__item__img {
-  background-image: url(assets/img/3D_Todos.png);
+  background-image: url(/assets/img/3D_Todos.png);
 }
 
 #section3 .parallax__item__img {
-  background-image: url(assets/img/3D_Book.png);
+  background-image: url(/assets/img/3D_Book.png);
 }
 
 .parallax__item__img:nth-child(1) {
@@ -261,10 +273,8 @@ body {
 }
 
 #project .content__image {
-  background-image: url(assets/img/project01.png);
+  background-image: url(/assets/img/project01.png);
 }
-
-
 
 /* 놀이터 */
 #playGround {
@@ -281,23 +291,23 @@ body {
 }
 
 /* #playGround .content__image {
-  background-image: url(assets/img/project01.png);
+  background-image: url(/assets/img/project01.png);
 } */
 
-#playGround .content__imgWrap .i1{
-  background-image: url(assets/img/JBBank/jeonbuk_bank.png);
+#playGround .content__imgWrap .i1 {
+  background-image: url(/assets/img/JBBank/jeonbuk_bank.png);
 }
-#playGround .content__imgWrap .i2{
-  background-image: url(assets/img/NeNe/nene_chicken.png);
+#playGround .content__imgWrap .i2 {
+  background-image: url(/assets/img/NeNe/nene_chicken.png);
 }
-#playGround .content__imgWrap .i3{
-  background-image: url(assets/img/JSTodo/todo_list.png);
+#playGround .content__imgWrap .i3 {
+  background-image: url(/assets/img/JSTodo/todo_list.png);
 }
-#playGround .content__imgWrap .i4{
-  background-image: url(assets/img/JSDrawer/draw.png);
+#playGround .content__imgWrap .i4 {
+  background-image: url(/assets/img/JSDrawer/draw.png);
 }
-#playGround .content__imgWrap .i5{
-  background-image: url(assets/img/SvelteBlog/svelte.png);
+#playGround .content__imgWrap .i5 {
+  background-image: url(/assets/img/SvelteBlog/svelte.png);
 }
 
 .footer {
@@ -315,25 +325,110 @@ body {
   max-width: 1020px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-around
+  justify-content: space-around;
 }
 
 .layer-one {
   list-style: none;
-  margin: 20px 0 20px 0; 
+  margin: 20px 0 20px 0;
   font-size: 13px;
   font-style: normal;
-  line-height: 30px;   
+  line-height: 30px;
+  padding: 10px;
 }
 
 .layer-two {
   list-style: none;
   margin: 20px 0 20px 0;
-  text-align: center;  
+  text-align: center;
   font-size: 13px;
   font-style: normal;
-  line-height: 30px; 
-}  
+  line-height: 30px;
+  padding: 10px;
+}
+
+/* 텍스트 뒤집게 */
+.content__image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+.card__content {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+  transform: rotateX(-90deg);
+  transition: all 0.8s cubic-bezier(0.075, 0.885, 0.82, 1.275);
+  position: relative;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.content__image:hover .card__content {
+  transform: rotateX(0deg);
+}
+
+.card__title {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+  font-weight: 700;
+}
+
+.card__subtitle {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #333;
+  font-weight: 700;
+}
+
+.card__description {
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: #777;
+  line-height: 1.4;
+}
+
+.card__button {
+  margin-top: 10px;
+}
+
+.skill-test {
+  display: inline-block;
+}
+
+.pill {
+  display: inline-block;
+  height: 17px;
+  margin: 1px 3px 2px 0;
+  padding: 0 8px;
+  border: 1px solid #85b6a5;
+  border-radius: 9px;
+  font-size: 11px;
+  line-height: 17px;
+  color: black;
+}
+
+/* 버튼 색상 */
+.b2 {
+  background: #00a3ff;
+}
+.b3 {
+  background: #ffde13;
+}
+.b4 {
+  background: #6ca43f;
+}
+.b5 {
+  background: #844502;
+}
+.b6 {
+  background: #ff3e00;
+}
 
 /* font awesome */
 i {
@@ -342,7 +437,6 @@ i {
   transition: all ease 1s;
 }
 i:hover {
-  ease;
   color: orange;
   transition: all ease 1s;
 }
