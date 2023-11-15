@@ -196,14 +196,14 @@ button:hover {
   transform: scale(1);
 }
 #section1 .parallax__item__img {
-  background-image: url(/assets/img/3D_Darts.png);
+  background-image: url(../assets/img/3D_Darts.png);
 }
 #section2 .parallax__item__img {
-  background-image: url(/assets/img/3D_Todos.png);
+  background-image: url(../assets/img/3D_Todos.png);
 }
 
 #section3 .parallax__item__img {
-  background-image: url(/assets/img/3D_Book.png);
+  background-image: url(../assets/img/3D_Book.png);
 }
 
 .parallax__item__img:nth-child(1) {
@@ -273,7 +273,7 @@ button:hover {
 }
 
 #project .content__image {
-  background-image: url(/assets/img/project01.png);
+  background-image: url(../assets/img/project01.png);
 }
 
 /* 놀이터 */
@@ -291,19 +291,19 @@ button:hover {
 }
 
 #playGround .content__imgWrap .i1 {
-  background-image: url(/assets/img/JBBank/jeonbuk_bank.png);
+  background-image: url(../assets/img/JBBank/jeonbuk_bank.png);
 }
 #playGround .content__imgWrap .i2 {
-  background-image: url(/assets/img/NeNe/nene_chicken.png);
+  background-image: url(../assets/img/NeNe/nene_chicken.png);
 }
 #playGround .content__imgWrap .i3 {
-  background-image: url(/assets/img/JSTodo/todo_list.png);
+  background-image: url(../assets/img/JSTodo/todo_list.png);
 }
 #playGround .content__imgWrap .i4 {
-  background-image: url(/assets/img/JSDrawer/draw.png);
+  background-image: url(../assets/img/JSDrawer/draw.png);
 }
 #playGround .content__imgWrap .i5 {
-  background-image: url(/assets/img/SvelteBlog/svelte.png);
+  background-image: url(../assets/img/SvelteBlog/svelte.png);
 }
 
 .footer {
